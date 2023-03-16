@@ -1,6 +1,6 @@
 <template>
     <div class="bg-white pt-6 pb-6">
-        <div class="mx-auto lg:max-w-6xl">
+        <div class="mx-auto lg:max-w-6xl px-5">
         <h2 class="text-2xl">Take a moment to read, learn and enjoy!</h2>
             <ul class="grid gap-4 mt-6 sm:grid-cols-2 lg:grid-cols-3">
                 <li v-for="{ _path: slug, title, description, img } in blogPosts" :key="slug">
