@@ -10,7 +10,7 @@
       </p>
     </header>
 
-    <ul class="grid gap-4 mt-8 sm:grid-cols-2 lg:grid-cols-3">
+    <ul class="grid px-5 gap-4 mt-8 sm:grid-cols-2 lg:grid-cols-3">
       <li v-for="(p, idx) in portfolio" :key="`portfolio-${idx}`">
         <a class="block overflow-hidden group rounded-md border-2">
           <nuxt-img
