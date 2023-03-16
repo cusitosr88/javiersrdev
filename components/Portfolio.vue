@@ -14,9 +14,9 @@
       <li v-for="(p, idx) in portfolio" :key="`portfolio-${idx}`">
         <a class="block overflow-hidden group rounded-md border-2">
           <nuxt-img
-            :src="`_ipx/${p.image}`"
+            :src="p.image"
             loading="lazy"
-            placeholder="100"
+            placeholder
             class="h-[250px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[250px]"
           />
 

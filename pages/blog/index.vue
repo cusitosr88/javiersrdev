@@ -7,7 +7,7 @@
                     <div class="block overflow-hidden group rounded-md border-2">
                         <NuxtLink :to="slug">
                             <nuxt-img
-                                :src="`_ipx/${img}`"
+                                :src="img"
                                 loading="lazy"
                                 placeholder
                                 class="h-[150px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[250px]"
