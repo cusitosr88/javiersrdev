@@ -9,10 +9,7 @@ export default defineNuxtConfig({
       cssPath: '~/assets/css/main.css',
     },
     image: {
-      provider: 'netlify',
-      netlify: {
-        baseURl: process.env.IMAGES_URL
-      }
+      provider: 'ipx',
     },
     app: {
       head: {
