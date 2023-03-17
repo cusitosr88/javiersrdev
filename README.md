@@ -1,6 +1,8 @@
-# Nuxt 3 Minimal Starter
+# JaviersrDev Portfolio with Nuxtjs 3
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Look at the [javiersr.dev](https://javiersr.dev/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/655f1736-0fd7-4907-a994-8920c672eebb/deploy-status)](https://app.netlify.com/sites/javiersrdev/deploys)
 
 ## Setup
 
