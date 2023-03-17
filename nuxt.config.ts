@@ -8,12 +8,12 @@ export default defineNuxtConfig({
     tailwindcss: {
       cssPath: '~/assets/css/main.css',
     },
-    image: {
-      provider: 'netlify',
-      netlify: {
-        baseURl: process.env.IMAGES_URL
-      }
-    },
+    // image: {
+    //   provider: 'netlify',
+    //   netlify: {
+    //     baseURl: process.env.IMAGES_URL
+    //   }
+    // },
     app: {
       head: {
         charset: 'utf-8',
