@@ -6,8 +6,8 @@
                 Web developer
             </span>
         </h1>
-        <div class="mt-4 lg:mt-4 text-center space-x-4 px-10 lg:px-40">
-            <span class="text-slate-100">Discover how I can help you build 
+        <div class="mx-auto lg:max-w-6xl mt-4 lg:mt-4 text-center space-x-4 px-10">
+            <span class="text-slate-100 lg:text-lg">Discover how I can help you build 
             high-quality and efficient web applications using my skills in 
             Vuejs, Quasar Framework, Nuxt, Pinia, Vite, Javascript, HTML, CSS, 
             Django Rest Framework, Python, Git, and Linux. Explore my portfolio 

@@ -30,7 +30,7 @@
             <div class="mt-2 pb-2">
               <ul class="flex items-center space-x-1 flex-wrap">
               <template v-for="(t, i) in p.tech" :key="i">
-                  <li class="inline-block px-1 py-0 mt-2 bg-slate-700 text-slate-100 rounded-full text-xs">
+                  <li class="inline-block px-2 py-1 mt-2 bg-slate-700 text-slate-100 rounded-full text-xs">
                       {{ t }}
                   </li>
               </template>

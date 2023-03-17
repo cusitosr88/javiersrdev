@@ -9,7 +9,7 @@
         <li>
             <NuxtLink
                 :to="n.link"
-                class="inline-block text-xs px-2 py-2 bg-slate-100 rounded-full hover:bg-blue-200 transition-all duration-300"
+                class="inline-block text-xs lg:text-base px-2 py-2 bg-slate-100 rounded-full hover:bg-blue-200 transition-all duration-300"
             >
             {{ n.name }}
             </NuxtLink>
