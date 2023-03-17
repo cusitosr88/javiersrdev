@@ -9,7 +9,7 @@
                             <nuxt-img
                                 :src="img"
                                 loading="lazy"
-                                placeholder
+                                placeholder="/images/no-image.jpg"
                                 class="h-[150px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[250px]"
                             />
                         </NuxtLink>

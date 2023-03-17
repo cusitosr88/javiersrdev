@@ -16,7 +16,7 @@
           <nuxt-img
             :src="p.image"
             loading="lazy"
-            placeholder
+            placeholder="/images/no-image.jpg"
             class="h-[250px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[250px]"
           />
 
