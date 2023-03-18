@@ -12,7 +12,7 @@
 
     <ul class="grid px-5 gap-4 mt-8 sm:grid-cols-2 lg:grid-cols-3">
       <li v-for="(p, idx) in portfolio" :key="`portfolio-${idx}`">
-        <a class="block overflow-hidden group rounded-md border-2">
+        <span class="block overflow-hidden group rounded-md border-2">
           <nuxt-img
             :src="p.image"
             loading="lazy"
@@ -45,7 +45,7 @@
               </a>
             </div>
           </div>
-        </a>
+        </span>
       </li>
     </ul>
   </div>
