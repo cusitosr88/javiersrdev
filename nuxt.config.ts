@@ -4,7 +4,7 @@ export default defineNuxtConfig({
         '@nuxtjs/tailwindcss',
         '@nuxt/content',
         '@nuxt/image-edge',
-        ['@nuxtjs/robots', { UserAgent: '*', Disallow: '', Allow: '/' }]
+        ['@nuxtjs/robots', { UserAgent: '*', Disallow: '' }],
     ],
     tailwindcss: {
       cssPath: '~/assets/css/main.css',
