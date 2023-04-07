@@ -2,7 +2,7 @@
 title:  'Step-by-Step Guide: Installing NVM on Ubuntu 22.04 for Efficient Node.js Management'
 description: 'In this article, we provide a thorough, step-by-step guide on how to install and set up NVM (Node Version Manager) on Ubuntu 22.04 for easy and efficient management of Node.js versions.'
 img: /images/posts/nvm-ubuntu.webp
-date: 2013-03-22
+date: 2023-03-22
 ---
 # Step-by-Step Guide: Installing NVM on Ubuntu 22.04 for Efficient Node.js Management
 

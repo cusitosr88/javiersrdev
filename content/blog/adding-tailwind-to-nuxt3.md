@@ -2,7 +2,7 @@
 title:  'Adding Tailwind to Your Nuxt 3 Project'
 description: 'In this step-by-step guide, we will explore how you can add Tailwind to your Nuxt 3 project and achieve efficient and effective styling with ease. From installing Tailwind and creating a configuration file to integrating it into your project styles.'
 img: /images/posts/nuxt-tailwind.webp
-date: 2013-03-14
+date: 2023-03-14
 ---
 # Adding Tailwind to Your Nuxt 3 Project: A Step-by-Step Guide
 
