@@ -15,7 +15,7 @@ const route = useRoute()
 const data = await queryContent(`/blog/${route.params.slug}`).findOne()
 useHead({
     meta: [
-        { hid: 'og:image', property: 'og:image', content: `${runtimeConfig.public.siteUrl}${data.img}` }
+        { hid: 'og:image', name: 'image',  property: 'og:image', content: `${runtimeConfig.public.siteUrl}${data.img}` },
     ]
 })
 </script>
