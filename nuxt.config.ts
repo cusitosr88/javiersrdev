@@ -5,6 +5,7 @@ export default defineNuxtConfig({
         '@nuxt/content',
         '@nuxt/image-edge',
         ['@nuxtjs/robots', { UserAgent: '*', Disallow: '' }],
+        'nuxt-simple-sitemap',
     ],
     tailwindcss: {
       cssPath: '~/assets/css/main.css',
@@ -36,6 +37,11 @@ export default defineNuxtConfig({
           }
         }
       },
+    runtimeConfig: {
+      public: {
+        siteUrl: 'https://javiersr.dev/',
+      }
+    },
     postcss: {
         plugins: {
             tailwindcss: {},
