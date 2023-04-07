@@ -27,6 +27,7 @@ export default defineNuxtConfig({
     },
     content: {
         // https://content.nuxtjs.org/api/configuration
+        documentDriven: true,
         markdown: {
             toc: { depth: 3, searchDepth: 3 }
         },
