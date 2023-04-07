@@ -40,7 +40,7 @@ export default defineNuxtConfig({
       },
     runtimeConfig: {
       public: {
-        siteUrl: 'https://javiersr.dev/',
+        siteUrl: 'https://javiersr.dev',
       }
     },
     postcss: {

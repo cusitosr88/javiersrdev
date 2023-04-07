@@ -9,5 +9,13 @@
     </div>
     </article>
 </template>
-<script setup>
+<script lang="ts" setup>
+const runtimeConfig = useRuntimeConfig()
+const route = useRoute()
+const data = await queryContent(`/blog/${route.params.slug}`).findOne()
+useHead({
+    meta: [
+        { hid: 'og:image', property: 'og:image', content: `${runtimeConfig.public.siteUrl}${data.img}` }
+    ]
+})
 </script>
