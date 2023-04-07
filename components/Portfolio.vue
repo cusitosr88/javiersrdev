@@ -51,9 +51,17 @@
   </div>
 </section>
 </template>
-<script setup>
+<script lang="ts" setup>
 import { Icon } from '@iconify/vue'
-const portfolio = [
+interface PortfolioItem {
+  title: string;
+  image: string;
+  description: string;
+  tech: string[];
+  link: string;
+}
+
+const portfolio: PortfolioItem[] = [
   {
     title: '(SPA) Video Editor',
     image: '/images/mindmovies.webp',

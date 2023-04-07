@@ -18,12 +18,15 @@
     </ul>
 </header>
 </template>
-
-<script setup>
-const nav = [
+<script lang="ts" setup>
+interface NavItem {
+    name: string
+    link: string
+}
+const nav: NavItem[] = [
         {
             name: 'Home',
-            link: '/'
+            link: '/',
         },
         {
             name: 'Portfolio',
@@ -35,5 +38,3 @@ const nav = [
         }
     ]
 </script>
-<style scoped>
-</style>
