@@ -3,7 +3,7 @@
         <div class="mx-auto lg:max-w-6xl px-5">
         <h2 class="text-2xl">Take a moment to read, learn and enjoy!</h2>
             <ul class="grid gap-4 mt-6 sm:grid-cols-2 lg:grid-cols-3">
-                <li v-for="{ _path: slug, title, description, img } in blogPosts" :key="slug">
+                <li v-for="{ _path: slug, title, description, img } in data" :key="slug">
                     <div class="block overflow-hidden group rounded-md border-2">
                         <NuxtLink :to="slug">
                             <nuxt-img
@@ -46,10 +46,12 @@ useHead({
     { name: 'description', content: 'Discover the power of Vue.js, Quasar Framework, Nuxt.js and JavaScript with this informative and educational blog. Whether you\'re a beginner or an experienced developer, you\'ll find practical tips, tutorials, and insights to help you unleash the full potential of these powerful technologies.' }
   ]
 })
-const blogPosts = await queryContent('/blog')
-  .sort({ date: -1 }) // show latest articles first
-  .where({ _partial: false }) // exclude the Partial files
-  .find();
+const { data } = await useAsyncData('blog', () => {
+    return queryContent('/blog')
+    .sort({ date: -1 })
+    .where({ _partial: false })
+    .find()
+})
 </script>
 <style>
     

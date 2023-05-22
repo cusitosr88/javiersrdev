@@ -12,10 +12,13 @@
 <script lang="ts" setup>
 const runtimeConfig = useRuntimeConfig()
 const route = useRoute()
-const data = await queryContent(`/blog/${route.params.slug}`).findOne()
+const { data } = await useAsyncData('blog', () => {
+    return queryContent(`/blog/${route.params.slug}`).findOne()
+})
+
 useHead({
     meta: [
-        { hid: 'og:image', name: 'image',  property: 'og:image', content: `${runtimeConfig.public.siteUrl}${data.img}` },
+        { hid: 'og:image', name: 'image',  property: 'og:image', content: `${runtimeConfig.public.siteUrl}${data.value.img}` },
     ]
 })
 </script>

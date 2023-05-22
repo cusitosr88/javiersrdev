@@ -5,6 +5,7 @@
         <main class="mx-auto px-0 lg:px-0 pt-14 lg:pt-12 h-3/4">
             <slot />
         </main>
+        <GoToTop/>
         <Footer/>
     </div>
   </template>
