@@ -15,10 +15,11 @@ const route = useRoute()
 const { data } = await useAsyncData('blog', () => {
     return queryContent(`/blog/${route.params.slug}`).findOne()
 })
-
-useHead({
-    meta: [
-        { hid: 'og:image', name: 'image',  property: 'og:image', content: `${runtimeConfig.public.siteUrl}${data.value.img}` },
-    ]
-})
+if (data.value !== null) {
+    useHead({
+        meta: [
+            { hid: 'og:image', name: 'image',  property: 'og:image', content: `${runtimeConfig.public.siteUrl}${data.value.img}` },
+        ]
+    })
+}
 </script>
